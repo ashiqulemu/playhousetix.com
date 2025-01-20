@@ -1,0 +1,204 @@
+// variables
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+$primary: #FDFE50;
+$black: #000;
+$theme: #FFB000;
+$txt: #585858;
+$white: #fff;
+
+ 
+
+body {
+    background-image: url('../images/robspp-bg2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.site-header {
+    background: #000;
+
+    .brand {
+        @media(min-width:768px) {
+            position: absolute;
+            top: -40px;
+        }
+
+        @media(max-width:768px) {
+            width: 50%;
+            text-align: center;
+        }
+    }
+
+    .social {
+        display: flex;
+        column-gap: 15px;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+            border: 1px solid #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            padding: 6px;
+            border-radius: 50%;
+            color: #fff;
+
+            &:hover {
+                background: $primary;
+                color: $black;
+                border: 1px solid #000000;
+            }
+        }
+    }
+}
+
+.ls {
+    letter-spacing: 15px;
+}
+
+.events {
+    height: auto;
+    padding-top: 90px;
+
+    .event-box {
+        padding: 7px;
+        background-color: $primary;
+        margin-bottom: 15px;
+
+        .info {
+            background: $white;
+            text-align: center;
+            padding: 15px 10px;
+            text-transform: uppercase;
+            transition: all 0.6s ease-in-out;
+
+            h5 {
+                text-align: center;
+                font-size: 0.9em;
+                color: #3a4045;
+                font-weight: 600;
+                text-transform: uppercase;
+
+                .decription {
+                    text-transform: uppercase;
+                    display: block;
+                    font-size: 0.8em;
+                    color: #888;
+                    letter-spacing: 2px;
+                    margin-top: 0.5em;
+                }
+            }
+
+            &:hover {
+                background: #212529;
+
+                h5 {
+                    color: $white;
+
+                    .decription {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+.btn-theme {
+    padding: 10px 20px; 
+    border-radius: 20px;
+    background: #fcff00;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    border: 3px solid #000;
+    font-weight: bold;
+
+    &:hover {
+        color: rgb(23, 92, 243);
+    }
+}
+
+.title {
+    font-size: 1.9em;
+    color: #3c3c3c;
+    letter-spacing: 1px;
+    position: relative;
+    font-weight: 600;
+    line-height: 1.6em;
+    margin-bottom: 0.3em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn-submit {
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    display: inline-block;
+    background: #000000;
+    border: 2px solid #999999;
+    color: #fff;
+    width: 100%;
+    line-height: 2.5;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+    text-transform: uppercase;
+
+    &:hover {
+        color: #feac00;
+    }
+}
+
+.contact {
+    background: #F7F7F7;
+
+    label {
+        color: #777879;
+        font-weight: 600;
+        font-size: 0.9em;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+    }
+}
+
+.bottom-part{
+    .items{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:nth-child(1){
+            background: $primary;
+        }
+        &:nth-child(2){
+            background: #F1F1F1;
+        }
+        &:nth-child(3){
+            background: $black;
+        }
+    }
+}
+
+
+.h2font2 {
+    font-family: 'montserrat';
+    font-size: 2rem;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 15px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.pfooter2 {
+    font-family: 'montserrat';
+    font-size: 1rem;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+}
