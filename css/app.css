@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 body {
-  background: red;
+  background-image: url("../images/TIOS-FI-Main-ITF18_Newsies_JN-2605.jpg.webp");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: repeat-y;
 }
 
 .site-header {
