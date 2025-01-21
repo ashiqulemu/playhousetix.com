@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 body {
-  background-image: url("../images/TIOS-FI-Main-ITF18_Newsies_JN-2605.jpg.webp");
+  background-image: linear-gradient(177deg, rgba(255, 0, 0, 0.4509803922), rgba(255, 7, 7, 0)), url(../images/TIOS-FI-Main-ITF18_Newsies_JN-2605.jpg.webp);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: repeat-y;
