@@ -3,8 +3,16 @@
   font-family: "broadway-event";
   src: url("../fonts/BroadwayEvent.ttf");
 }
+.txt-primary {
+  color: #FFA134;
+}
+
+.txt-secondary {
+  color: #CB0026;
+}
+
 body {
-  background-image: linear-gradient(177deg, rgba(83, 0, 0, 0.79), rgba(255, 7, 7, 0)), url(../images/TIOS-FI-Main-ITF18_Newsies_JN-2605.jpg.webp);
+  background-image: linear-gradient(177deg, rgb(33, 1, 1), rgba(255, 7, 7, 0)), url(../images/TIOS-FI-Main-ITF18_Newsies_JN-2605.jpg.webp);
   background-size: 100% 100%;
   background-attachment: fixed;
   background-repeat: repeat-y;
@@ -13,15 +21,9 @@ body {
 .site-header {
   background: #000;
 }
-@media (min-width: 768px) {
-  .site-header .brand {
-    position: absolute;
-    top: -40px;
-  }
-}
 @media (max-width: 768px) {
   .site-header .brand {
-    width: 50%;
+    width: 70%;
     text-align: center;
   }
 }
@@ -34,7 +36,7 @@ body {
 }
 .site-header .social a {
   text-decoration: none;
-  border: 1px solid #ff0000;
+  border: 1px solid #FFA134;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,10 +44,10 @@ body {
   padding: 6px;
   border-radius: 50%;
   color: #fff;
-  background: #ff0000;
+  background: #FFA134;
 }
 .site-header .social a:hover {
-  background: #ff0000;
+  background: #FFA134;
   color: #000;
   border: 1px solid #000;
 }
@@ -56,11 +58,11 @@ body {
 
 .events {
   height: auto;
-  padding-top: 90px;
+  padding-top: 55px;
 }
 .events .event-box {
   padding: 7px;
-  background-color: #f1f1f1;
+  background-color: rgba(241, 241, 241, 0.5215686275);
   margin-bottom: 5px;
 }
 .events .event-box .info {
@@ -98,7 +100,7 @@ body {
 .btn-theme {
   padding: 10px 20px;
   border-radius: 27px;
-  background: #ff0000;
+  background: #FFA134;
   text-align: center;
   text-decoration: none;
   color: #000;
@@ -138,7 +140,7 @@ body {
 }
 .btn-submit:hover {
   color: #fff;
-  background: #ff0000;
+  background: #FFA134;
 }
 
 .contact {
@@ -158,7 +160,7 @@ body {
   justify-content: center;
 }
 .bottom-part .items:nth-child(1) {
-  background: #ff0000;
+  background: #FFA134;
 }
 .bottom-part .items:nth-child(2) {
   background: #F1F1F1;
@@ -190,10 +192,13 @@ body {
 }
 
 .txt-stroke {
-  color: red !important;
   font-family: "broadway-event";
   color: #ff0000 !important;
-  font-family: "broadway-event";
-  text-shadow: 0px 5px 0px black;
-  -webkit-text-stroke: 0.5px #fff;
+  text-shadow: 0px -2px 20px #ff0000;
+  -webkit-text-stroke: 1px #fff;
+}
+
+.form-control:focus {
+  outline: 2px solid #FFA134;
+  border-color: transparent;
 }/*# sourceMappingURL=app.css.map */

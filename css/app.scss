@@ -1,6 +1,7 @@
 // variables
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-$primary: #ff0000;
+$primary: #FFA134;
+$secondary: #CB0026;
 $black: #000;
 $theme: #FFB000;
 $txt: #585858;
@@ -12,11 +13,17 @@ $white: #fff;
     src: url('../fonts/BroadwayEvent.ttf');
 }
 
- 
+ .txt-primary{
+    color: $primary;
+ }
+
+ .txt-secondary{
+    color: $secondary;
+ }
 
 body {
     // background-image: linear-gradient(177deg, #ff000073, #ff070700), url(../images/TIOS-FI-Main-ITF18_Newsies_JN-2605.jpg.webp);
-    background-image: linear-gradient(177deg, rgb(83 0 0 / 79%), rgba(255, 7, 7, 0)), url(../images/TIOS-FI-Main-ITF18_Newsies_JN-2605.jpg.webp);
+    background-image: linear-gradient(177deg, rgb(33 1 1), rgba(255, 7, 7, 0)), url(../images/TIOS-FI-Main-ITF18_Newsies_JN-2605.jpg.webp);
     
 
     background-size: 100% 100%;
@@ -28,13 +35,13 @@ body {
     background: #000;
 
     .brand {
-        @media(min-width:768px) {
-            position: absolute;
-            top: -40px;
-        }
+        // @media(min-width:768px) {
+        //     position: absolute;
+        //     top: -40px;
+        // }
 
         @media(max-width:768px) {
-            width: 50%;
+            width: 70%;
             text-align: center;
         }
     }
@@ -72,11 +79,11 @@ body {
 
 .events {
     height: auto;
-    padding-top: 90px;
+    padding-top: 55px;
 
     .event-box {
         padding: 7px;
-        background-color: #f1f1f1;
+        background-color: #f1f1f185;
         margin-bottom: 5px;
 
         .info {
@@ -221,15 +228,18 @@ body {
 }
 
 .txt-stroke{
-    // -webkit-text-stroke: 2px #ffffff;
-    color: red !important;
+    // -webkit-text-stroke: 2px #ffffff; 
     // text-shadow: -1px 7px 3px black;
-    font-family: 'broadway-event';
-
-
-
+    font-family: 'broadway-event';  
     color: #ff0000 !important;
-    font-family: "broadway-event";
-    text-shadow: 0px 5px 0px black;
-    -webkit-text-stroke: 0.5px #fff;
+    // font-family: "broadway-event";  
+    text-shadow: 0px -2px 20px #ff0000;
+    -webkit-text-stroke: 1px #fff;
+}
+
+.form-control{  
+    &:focus{ 
+        outline: 2px solid $primary;
+        border-color: transparent;
+    }
 }
