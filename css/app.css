@@ -46,6 +46,7 @@ body {
   color: #000;
   background: #FFA134;
   transition: all 0.4s ease-in-out;
+  display: none;
 }
 .site-header .social a:hover {
   background: #FFA134;

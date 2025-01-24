@@ -13,22 +13,22 @@ $white: #fff;
     src: url('../fonts/BroadwayEvent.ttf');
 }
 
- .txt-primary{
+.txt-primary {
     color: $primary;
- }
+}
 
- .txt-secondary{
+.txt-secondary {
     color: $secondary;
- }
+}
 
 body {
     // background-image: linear-gradient(177deg, #ff000073, #ff070700), url(../images/TIOS-FI-Main-ITF18_Newsies_JN-2605.jpg.webp);
     background-image: linear-gradient(177deg, rgb(33 1 1), rgba(255, 7, 7, 0)), url(../images/TIOS-FI-Main-ITF18_Newsies_JN-2605.jpg.webp);
-    
+
 
     background-size: 100% 100%;
     background-attachment: fixed;
-    background-repeat: repeat-y;     
+    background-repeat: repeat-y;
 }
 
 .site-header {
@@ -52,6 +52,7 @@ body {
         align-items: center;
         justify-content: center;
 
+
         a {
             text-decoration: none;
             border: 1px solid $primary;
@@ -64,9 +65,11 @@ body {
             color: $black;
             background: $primary;
             transition: all 0.4s ease-in-out;
+            display: none;
+
             &:hover {
                 background: $primary;
-                color: $white; 
+                color: $white;
                 transform: translateY(-4px);
             }
         }
@@ -141,7 +144,7 @@ body {
 
     &:hover {
         color: $white;
-        background:$secondary;
+        background: $secondary;
     }
 }
 
@@ -172,6 +175,7 @@ body {
     border: 0;
     font-weight: bold;
     box-shadow: 0px 3px 6px #00000073;
+
     &:hover {
         color: $white;
         background: $secondary;
@@ -190,18 +194,21 @@ body {
     }
 }
 
-.bottom-part{
-    .items{
+.bottom-part {
+    .items {
         display: flex;
         align-items: center;
         justify-content: center;
-        &:nth-child(1){
+
+        &:nth-child(1) {
             background: $primary;
         }
-        &:nth-child(2){
+
+        &:nth-child(2) {
             background: #F1F1F1;
         }
-        &:nth-child(3){
+
+        &:nth-child(3) {
             background: $black;
         }
     }
@@ -218,6 +225,7 @@ body {
     margin-bottom: 1rem;
     font-weight: 600;
 }
+
 .pfooter2 {
     font-family: 'montserrat';
     font-size: 1rem;
@@ -229,18 +237,18 @@ body {
     word-break: break-word;
 }
 
-.txt-stroke{
+.txt-stroke {
     // -webkit-text-stroke: 2px #ffffff; 
     // text-shadow: -1px 7px 3px black;
-    font-family: 'broadway-event';  
+    font-family: 'broadway-event';
     color: #ff0000 !important;
     // font-family: "broadway-event";  
     text-shadow: 0px -2px 20px #ff0000;
     -webkit-text-stroke: 1px #fff;
 }
 
-.form-control{  
-    &:focus{ 
+.form-control {
+    &:focus {
         outline: 2px solid $primary;
         border-color: transparent;
         box-shadow: none;
