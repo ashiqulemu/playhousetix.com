@@ -7,10 +7,9 @@ $theme: #FFB000;
 $txt: #585858;
 $white: #fff;
 
-
 @font-face {
-    font-family: 'broadway-event';
-    src: url('../fonts/BroadwayEvent.ttf');
+    font-family: 'agcoopercyr';
+    src: url('../fonts/AGCOO14.woff');
 }
 
 .txt-primary {
@@ -24,8 +23,6 @@ $white: #fff;
 body {
     // background-image: linear-gradient(177deg, #ff000073, #ff070700), url(../images/TIOS-FI-Main-ITF18_Newsies_JN-2605.jpg.webp);
     background-image: linear-gradient(177deg, rgb(33 1 1), rgba(255, 7, 7, 0)), url(../images/TIOS-FI-Main-ITF18_Newsies_JN-2605.jpg.webp);
-
-
     background-size: 100% 100%;
     background-attachment: fixed;
     background-repeat: repeat-y;
@@ -33,6 +30,46 @@ body {
 
 .site-header {
     background: #000;
+
+    .site-nav-link {
+        text-transform: uppercase;
+        padding: 4px 24px;
+        background: #000000;
+        outline: 5px solid white;
+        text-decoration: none;
+        font-size: 1.7rem;
+        outline: 3px solid #ffa134;
+        color: #ffffff;
+        letter-spacing: 10px;
+        // -webkit-text-stroke: 0.2px #ffffff;
+        border-radius: 33px;
+        background: #000000;
+        box-shadow: 1px 0px 20px 20px rgba(255, 0, 0, 0.3294117647);
+        font-family: 'agcoopercyr';
+
+        &:hover{
+            background: $secondary;
+            color: $black;
+        }
+
+        // text-transform: uppercase;
+        // padding: 4px 24px;
+        // background: #000000;
+        // outline: 5px solid white;
+        // text-decoration: none;
+        // font-weight: bold;
+        // font-family: "montserrat";
+        // font-size: 1.7rem;
+        // outline: 3px solid #ffa134;
+        // color: #000000;
+        // font-family: 'impact';
+        // letter-spacing: 10px;
+        // -webkit-text-stroke: 0.2px #ffffff;
+        // border-radius: 33px;
+        // background: #cb0026;
+        // box-shadow: 1px 0px 20px 20px #ff000054;
+        // font-family:'goudystd-heavyface' ;
+    }
 
     .brand {
         // @media(min-width:768px) {
