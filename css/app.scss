@@ -31,45 +31,7 @@ body {
 .site-header {
     background: #000;
 
-    .site-nav-link {
-        text-transform: uppercase;
-        padding: 4px 24px;
-        background: #000000;
-        outline: 5px solid white;
-        text-decoration: none;
-        font-size: 1.7rem;
-        outline: 3px solid #ffa134;
-        color: #ffffff;
-       
-        // -webkit-text-stroke: 0.2px #ffffff;
-        border-radius: 33px;
-        background: #000000;
-        box-shadow: 1px 0px 20px 20px rgba(255, 0, 0, 0.3294117647);
-        font-family: 'agcoopercyr';
-
-        &:hover{
-            background: $secondary;
-            color: $black;
-        }
-
-        // text-transform: uppercase;
-        // padding: 4px 24px;
-        // background: #000000;
-        // outline: 5px solid white;
-        // text-decoration: none;
-        // font-weight: bold;
-        // font-family: "montserrat";
-        // font-size: 1.7rem;
-        // outline: 3px solid #ffa134;
-        // color: #000000;
-        // font-family: 'impact';
-        // letter-spacing: 10px;
-        // -webkit-text-stroke: 0.2px #ffffff;
-        // border-radius: 33px;
-        // background: #cb0026;
-        // box-shadow: 1px 0px 20px 20px #ff000054;
-        // font-family:'goudystd-heavyface' ;
-    }
+ 
 
     .brand {
         // @media(min-width:768px) {
@@ -111,6 +73,29 @@ body {
             }
         }
     }
+}
+
+.site-nav-link {
+    text-transform: uppercase;
+    padding: 4px 24px;
+    background: #000000;
+    outline: 5px solid white;
+    text-decoration: none;
+    font-size: 1.7rem;
+    outline: 3px solid #ffa134;
+    color: #ffffff;
+   
+    // -webkit-text-stroke: 0.2px #ffffff;
+    border-radius: 33px;
+    background: #000000;
+    box-shadow: 1px 0px 20px 20px rgba(255, 0, 0, 0.3294117647);
+    font-family: 'agcoopercyr';
+
+    &:hover{
+        background: $secondary;
+        color: $black;
+    } 
+    
 }
 
 .ls {
@@ -290,4 +275,28 @@ body {
         border-color: transparent;
         box-shadow: none;
     }
+}
+
+.custom-form{
+    label{
+        display: inline-block;
+        font-size: 15px;
+        margin-bottom: 5px;
+        font-weight: 500; 
+    }
+}
+
+.bg-cream{
+    background: #F1F1F1;
+}
+
+.d-none{
+    &.open{
+        display: block!important;
+    }
+}
+
+.filter{
+    backdrop-filter: blur(3px);
+    background: #ffffffe3;
 }
