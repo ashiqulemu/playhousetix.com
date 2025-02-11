@@ -1,6 +1,10 @@
 
-   function openModal(){
-     document.getElementById("scroller").classList.toggle('overflow-hide');
+   
+   function viewDetailsPayments(event){
+    
+    document.getElementById("payment-details").classList.toggle('open');
+     event.preventDefault();
    }
+      
 
  
